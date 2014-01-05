@@ -9,5 +9,5 @@ Procedure
 ---------
 
   - prune empty directories in the pool
-  - do a git gc --prune to dak.git, git update-server-info
+  - do a ``git gc --prune`` to ``dak.git``, ``git update-server-info``
   - fix the symlinks in ftpdir

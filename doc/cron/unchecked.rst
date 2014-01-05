@@ -14,24 +14,24 @@ Procedure
 
 The following is a quick digest of what unchecked does (in order)
 
-  - process policy queues (stable-new, oldstable-new, backports)
-  - clean suites packports-policy, policy
+  - process policy queues (``stable-new``, ``oldstable-new``, ``backports``)
+  - clean suites ``packports-policy``, ``policy``
   - do unchecked processing
     - (find all changes)
-    - process-upload
-    - process-commands
+    - ``dak process-upload``
+    - ``dak process-commands``
   - sync debbugs
   - do some buildd stuff
-    - make-overrides
-    - make_buildd_dir
-      - manage-build-queues
-      - generate-packages-sources2
-      - generate-releases
-      - update-buildd-archive
-      - rm public/*
-      - export-suite -s "accepted" -d "$incoming/public"
-    - wbtrigger
-      - wbadm@buildd /org/wanna-build/trigger.often
+    - ``make-overrides``
+    - ``make_buildd_dir``
+      - ``manage-build-queues``
+      - ``generate-packages-sources2``
+      - ``generate-releases``
+      - ``update-buildd-archive``
+      - ``rm public/*``
+      - ``export-suite -s "accepted" -d "$incoming/public"``
+    - ``wbtrigger``
+      - ``ssh wbadm@buildd /org/wanna-build/trigger.often``
   - dak contents
-    - scan-binary
-    - scan-source
+    - ``scan-binary``
+    - ``scan-source``
